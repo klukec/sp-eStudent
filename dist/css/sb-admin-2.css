@@ -30,6 +30,13 @@ body {
 .navbar-top-links {
     margin-right: 0;
 }
+@media(max-width:768px) {
+    .navbar-top-links {
+        margin-right: 0;
+        margin-left: 140px;
+        margin-top: -35px;
+    }
+}
 
 .navbar-top-links li {
     display: inline-block;
@@ -40,8 +47,14 @@ body {
 }
 
 .navbar-top-links li a {
-    padding: 15px;
+    padding: 13px;
     min-height: 50px;
+}
+@media(min-width:768px) {
+    .navbar-top-links li a {
+        padding: 30px;
+        min-height: 80px;
+    }
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -132,7 +145,7 @@ body {
         z-index: 1;
         position: absolute;
         width: 250px;
-        margin-top: 51px;
+        margin-top: 85px;
     }
 
     .navbar-top-links .dropdown-messages,
