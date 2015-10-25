@@ -80,7 +80,8 @@
                         <a href="indeksStudent.html"><i class="fa fa-pencil fa-fw"></i> Elektronski indeks</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-folder-open fa-fw"></i> Izpitni roki<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-folder-open fa-fw"></i> Izpitni roki<span
+                                class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="razpisaniRoki.html">Razpisani izpitni roki</a>
@@ -146,9 +147,8 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading red">
-                        Zaključeni izpitni roki
+                        Izbira prikaza
                     </div>
-                    <!-- /.panel-heading -->
                     <div class="panel-body">
                         <div class="form-group">
                             <label>Predmet</label>
@@ -160,17 +160,52 @@
                                 <option>Osnove informacijskih storitev</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>Šolsko leto</label>
+                            <select class="form-control" id="solLeto">
+                                <option>vsa šolska leta</option>
+                                <option>2010/2011</option>
+                                <option>2011/2012</option>
+                                <option>2012/2013</option>
+                                <option>2013/2014</option>
+                                <option>2014/2015</option>
+                                <option>2015/2016</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Izpitni rok</label>
+                            <select class="form-control" id="izpitniRok">
+                                <option>vsi izpitni roki</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading red">
+                        Poročilo o zaključenih izpitnih rokih
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
                         <div class="table-responsive table-bordered">
                             <table class="table">
                                 <thead>
                                 <tr>
                                     <th>Predmet</th>
                                     <th>Profesor</th>
+                                    <th>Šolsko leto</th>
+                                    <th>Izpitni rok</th>
                                     <th>Datum</th>
                                     <th>Prostor</th>
                                     <th>Komentar</th>
-                                    <th>Št. pozitivnih ocen</th>
-                                    <th>Št. negativnih ocen</th>
+                                    <th>Pozitivno</th>
+                                    <th>Negativno</th>
+                                    <th>Skupaj</th>
                                     <th>Grafični prikaz realizacije</th>
                                 </tr>
                                 </thead>
@@ -178,14 +213,18 @@
                                 <tr>
                                     <td>Diskretne strukture</td>
                                     <td>Gašper Fijavž</td>
+                                    <td>2014/2015</td>
+                                    <td>1</td>
                                     <td>20.1.2014</td>
                                     <td>P01</td>
                                     <td>10:00</td>
                                     <td>40</td>
                                     <td>20</td>
+                                    <td>60</td>
                                     <td>
                                         <div class="progress progress-striped active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 67%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                 style="width: 67%">
                                             </div>
                                         </div>
                                     </td>
@@ -193,14 +232,18 @@
                                 <tr>
                                     <td>Diskretne strukture</td>
                                     <td>Gašper Fijavž</td>
+                                    <td>2014/2015</td>
+                                    <td>1</td>
                                     <td>20.1.2014</td>
                                     <td>P01</td>
                                     <td>10:00</td>
                                     <td>20</td>
                                     <td>40</td>
+                                    <td>60</td>
                                     <td>
                                         <div class="progress progress-striped active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 33%">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 style="width: 33%">
                                             </div>
                                         </div>
                                     </td>
@@ -208,14 +251,18 @@
                                 <tr>
                                     <td>Diskretne strukture</td>
                                     <td>Gašper Fijavž</td>
+                                    <td>2014/2015</td>
+                                    <td>1</td>
                                     <td>20.1.2014</td>
                                     <td>P01</td>
                                     <td>10:00</td>
                                     <td>40</td>
                                     <td>20</td>
+                                    <td>60</td>
                                     <td>
                                         <div class="progress progress-striped active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 67%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                 style="width: 67%">
                                             </div>
                                         </div>
                                     </td>
