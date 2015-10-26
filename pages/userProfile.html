@@ -168,9 +168,58 @@
                                     <input type="tel" class="form-control" placeholder="mobilni telefon">
                                 </div>
                                 <div class="form-group">
+                                    <label class="desno20">Spol</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="spol" id="moski" value="moski" checked>moški
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="spol" id="zenski" value="zenski">ženski
+                                    </label>
+                                </div>
+                                <div class="form-group">
                                     <input type="submit" value="Shrani osebne podatke" class="btn btn-danger btn-block" id="shraniOsebne">
                                 </div>
                             </form>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading red">
+                            Podatki o šolanju
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="vpisna številka" value="63130164" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Vpisan v letnik</label>
+                                <select class="form-control" id="letnikUser" disabled>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Trenutno šolsko leto</label>
+                                <select class="form-control" id="solLetoUser" disabled>
+                                    <option>2010/2011</option>
+                                    <option>2011/2012</option>
+                                    <option>2012/2013</option>
+                                    <option>2013/2014</option>
+                                    <option>2014/2015</option>
+                                    <option>2015/2016</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Shrani podatke o novem šolanju"
+                                       class="btn btn-danger btn-block disabled" id="shraniSolanjeUser">
+                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -203,43 +252,6 @@
                                            class="btn btn-danger btn-block" id="shraniPrijavne">
                                 </div>
                             </form>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-4 -->
-
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading red">
-                            Podatki o šolanju
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label>Vpisan v letnik</label>
-                                <select class="form-control" id="letnikUser" disabled>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Trenutno šolsko leto</label>
-                                <select class="form-control" id="solLetoUser" disabled>
-                                    <option>2010/2011</option>
-                                    <option>2011/2012</option>
-                                    <option>2012/2013</option>
-                                    <option>2013/2014</option>
-                                    <option>2014/2015</option>
-                                    <option>2015/2016</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Shrani podatke o novem šolanju"
-                                       class="btn btn-danger btn-block disabled" id="shraniSolanjeUser">
-                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -283,15 +295,6 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="../dist/js/sb-admin-2.js"></script>
-
-<!-- Page-Level Demo Scripts - Tables - Use for reference -->
-<script>
-    $(document).ready(function () {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
-</script>
 
 </body>
 

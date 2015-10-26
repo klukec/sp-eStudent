@@ -10,7 +10,7 @@
     <meta name="author" content="Matic @Makro.si">
     <link rel="icon" href="http://www.makro.si/favicon.ico">
 
-    <title>e-Študent - Razpiši izpitni rok </title>
+    <title>e-Študent - Elektronski indeks</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -139,7 +139,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Razpiši ali uredi izpitni rok</h1>
+                <h1 class="page-header">Zgodovina šolanja</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -148,66 +148,23 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading red">
-                        Razpiši ali uredi izpitni rok
+                        Študent
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <form role="form">
-                            <div class="form-group">
-                                <label>Predmet</label>
-                                <select class="form-control" id="predmet">
-                                    <option>Diskretne strukture</option>
-                                    <option>Osnove matematične analize</option>
-                                    <option>Programiranje 1</option>
-                                    <option>Osnove informacijskih storitev</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Šolsko leto</label>
-                                <select class="form-control" id="solLeto">
-                                    <option>2010/2011</option>
-                                    <option>2011/2012</option>
-                                    <option>2012/2013</option>
-                                    <option>2013/2014</option>
-                                    <option>2014/2015</option>
-                                    <option>2015/2016</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Izpitni rok</label>
-                                <select class="form-control" id="izpitniRok">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Datum</label>
-                                <input type="date" class="form-control" name="datum">
-                            </div>
-                            <div class="form-group">
-                                <label>Prostor</label>
-                                <input class="form-control" id="prostor">
-
-                            </div>
-                            <div class="form-group">
-                                <label>Komentar</label>
-                                <input class="form-control" id="komentar">
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Shrani izpitni rok" class="btn btn-danger btn-block">
-                            </div>
-                        </form>
-
+                        <div class="form-group">
+                            <select class="form-control" id="student" disabled>
+                                <option>Matic Novak (63130164)</option>
+                            </select>
+                        </div>
                     </div>
                     <!-- /.panel-body -->
                 </div>
                 <!-- /.panel -->
 
-                <h1 class="page-header">Vnos ocen za izbrani izpitni rok</h1>
                 <div class="panel panel-default">
                     <div class="panel-heading red">
-                        Seznam študentov na izpitu
+                        Zgodovina šolanja
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -215,60 +172,44 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>Vpisna številka</th>
-                                    <th>Ime in priimek</th>
-                                    <th>Točke</th>
-                                    <th>Ocena</th>
+                                    <th>#</th>
+                                    <th>Šolsko leto</th>
+                                    <th>Letnik</th>
+                                    <th>Vpis v letnik</th>
+                                    <th>Število opravljenih predmetov</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
+                                    <td>1</td>
+                                    <td>2014/2015</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>8</td>
                                 </tr>
                                 <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
+                                    <td>2</td>
+                                    <td>2015/2016</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
                                 </tr>
                                 <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
-                                </tr>
-                                <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
-                                </tr>
-                                <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
-                                </tr>
-                                <tr>
-                                    <td>63130164</td>
-                                    <td>Matic Novak</td>
-                                    <td><input class="form-control" placeholder="točke"></td>
-                                    <td><input class="form-control" placeholder="ocena"></td>
+                                    <td>3</td>
+                                    <td>2016/2017</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <!-- /.table-responsive -->
-                        <div class="form-group">
-                            <input type="submit" value="Shrani ocene" class="btn btn-danger btn-block">
-                        </div>
                     </div>
                     <!-- /.panel-body -->
                 </div>
                 <!-- /.panel -->
+
             </div>
             <!-- /.col-lg-12 -->
         </div>
