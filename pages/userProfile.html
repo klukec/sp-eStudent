@@ -112,13 +112,10 @@
                                 class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="profesorji.html">Profesorji</a>
-                            </li>
-                            <li>
                                 <a href="predmeti.html">Predmeti</a>
                             </li>
                             <li>
-                                <a href="solskaLeta.html">Šolska leta</a>
+                                <a href="studijskaLeta.html">Študijska leta</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -156,16 +153,16 @@
                         <div class="panel-body">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="ime">
+                                    <input type="text" class="form-control" placeholder="ime" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="priimek">
+                                    <input type="text" class="form-control" placeholder="priimek" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="naslov">
+                                    <input type="text" class="form-control" placeholder="naslov" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="mobilni telefon">
+                                    <input type="tel" class="form-control" placeholder="mobilni telefon" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="desno20">Spol</label>
@@ -174,6 +171,18 @@
                                     </label>
                                     <label class="radio-inline">
                                         <input type="radio" name="spol" id="zenski" value="zenski">ženski
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="desno20">Vloga</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="vloga" id="student" value="student" checked>študent
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="vloga" id="profesor" value="profesor">profesor
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="vloga" id="administrator" value="administrator">administrator
                                     </label>
                                 </div>
                                 <div class="form-group">
@@ -238,14 +247,14 @@
                                 <div class="form-group">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon">@</span>
-                                        <input type="email" class="form-control" placeholder="e-mail">
+                                        <input type="email" class="form-control" placeholder="e-mail" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="novo geslo">
+                                    <input type="password" class="form-control" placeholder="novo geslo" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="ponovi novo geslo">
+                                    <input type="password" class="form-control" placeholder="ponovi novo geslo" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Shrani prijavne podatke"

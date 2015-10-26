@@ -8,6 +8,6 @@ Upošteval:
 - zaobljeni robovi - border radious
 - transition - logotip
 - input type: tel, email, password, date, placeholder - html 5
+- range za številko
 - custom poblikovan unordered list
-
-validacija obrazcev - required fields
+- uporabljanje required

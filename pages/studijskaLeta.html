@@ -10,7 +10,7 @@
     <meta name="author" content="Matic @Makro.si">
     <link rel="icon" href="http://www.makro.si/favicon.ico">
 
-    <title>e-Študent - Zgodovina šolanja</title>
+    <title>e-Študent - Študijska leta</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,9 @@
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- include the Tools (range slider) -->
+    <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -134,85 +137,155 @@
     </nav>
 
     <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Zgodovina šolanja</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading red">
-                        Študent
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <select class="form-control" id="student" disabled>
-                                <option>Matic Novak (63130164)</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
+        <div class="col-lg-6">
+            <h1 class="page-header">Šolska leta</h1>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading red">
-                        Zgodovina šolanja
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div class="table-responsive table-bordered">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Šolsko leto</th>
-                                    <th>Letnik</th>
-                                    <th>Vpis v letnik</th>
-                                    <th>Število opravljenih predmetov</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>2014/2015</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>2015/2016</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>2016/2017</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- /.table-responsive -->
-                    </div>
-                    <!-- /.panel-body -->
+            <div class="panel panel-default">
+                <div class="panel-heading red">
+                    Seznam šolskih let
                 </div>
-                <!-- /.panel -->
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <form>
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="dodaj šolsko leto" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <input type="submit" value="dodaj"
+                                       class="btn btn-danger btn-block" id="dodajSolLeto">
+                            </div>
+                        </div>
+                    </form>
 
+                    <div class="table-responsive table-bordered">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Šolsko leto</th>
+                                <th>Upravljaj</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2010/2011</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2011/2012</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2012/2013</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2013/2014</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>2014/2015</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>2015/2016</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
             </div>
-            <!-- /.col-lg-12 -->
         </div>
-        <!-- /.row -->
+        <!-- /.col-lg-6 -->
+
+        <div class="col-lg-6">
+            <h1 class="page-header">Letniki študija</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-heading red">
+                    Seznam letnikov
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <form>
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <input name="letnik" type="text" class="form-control" placeholder="dodaj letnik" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <input type="submit" value="dodaj"
+                                       class="btn btn-danger btn-block" id="dodajLetnik">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="table-responsive table-bordered">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Letnik</th>
+                                <th>Upravljaj</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline btn-danger btn-sm">Izbriši</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+        </div>
+        <!-- /.col-lg-6 -->
+
     </div>
-    <!-- /#page-wrapper -->
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
 
 </div>
 <div class="panel-footer noga">
