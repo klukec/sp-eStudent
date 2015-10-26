@@ -80,8 +80,10 @@
 
 }
 
-.btn-mozilla {
-    margin-top: 81px;
+@-moz-document url-prefix() {
+    .btn-mozilla {
+        margin-top: 81px;
+    }
 }
 
 /* Footer Makro.si */
