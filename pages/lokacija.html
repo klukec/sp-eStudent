@@ -152,53 +152,41 @@
         </div>
         <!-- /.row -->
 
-        <div class="col-lg-6">
-            <div class="panel panel-default">
-                <div class="panel-heading red">
-                    Lokacija fakultete
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading red">
+                        Lokacija fakultete
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div id="map-canvas"></div>
+                    </div>
+                    <!-- /.panel-body -->
                 </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div id="map-canvas"></div>
-                </div>
-                <!-- /.panel-body -->
             </div>
-        </div>
-        <!-- /.col-lg-6 -->
+            <!-- /.col-lg-6 -->
 
-        <div class="col-lg-6">
-            <div class="panel panel-default">
-                <div class="panel-heading red">
-                    Vaša lokacija
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div id="map"></div>
-                    <p><b>Vaš naslov</b>: <span id="address"></span></p>
-                    <p id="error" class='obvestilo label label-danger fade-in'></p>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-        </div>
-        <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading red">
+                        Vaša lokacija
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div id="map"></div>
+                        <p><b>Vaš naslov</b>: <span id="address"></span></p>
 
-            <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading red">
-                    Navodila za pot od vaše trenutne lokacije do fakultete
+                        <p id="error" class='obvestilo label label-danger fade-in'></p>
+                        <a id="povezavaOdpri" target="_blank" class="btn btn-primary btn-xs">Prikaži navodila za pot do
+                            fakultete</a>
+                    </div>
+                    <!-- /.panel-body -->
                 </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <!--<a id="povezavaOdpri" target="_blank" class="btn btn-primary btn-xs">Prikaži navodila za pot do-->
-                        <!--fakultete</a>-->
-                    <iframe id="povezavaOdpri" src="" class="navodilaZaPot"></iframe>
-                </div>
-                <!-- /.panel-body -->
             </div>
+            <!-- /.col-lg-6 -->
         </div>
-        <!-- /.col-lg-6 -->
-                </div>
+        <!-- /.row -->
     </div>
     <!-- /#page-wrapper -->
 
