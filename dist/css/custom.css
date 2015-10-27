@@ -110,6 +110,11 @@
     border: 0 !important;
 }
 
+#piskotek {
+    font-size: 14px;
+    display: inline;
+}
+
 /* Footer Makro.si */
 #makro-izvedba {
     padding: 5px 10px 10px 10px;
