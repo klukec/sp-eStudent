@@ -1,6 +1,9 @@
 /**
  * Created by Matic-ProBook on 27. 10. 2015.
  */
+
+var povezava="";
+
 function writeAddressName(latLng) {
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({
@@ -46,11 +49,11 @@ function geolocationSuccess(position) {
     var mojaLokacijaA = position.coords.latitude;
     var mojaLokacijaB = position.coords.longitude;
 
-    var povezava = "https://maps.google.com?daddr=46.0500176, 14.4668417&saddr=";
+    povezava = "https://maps.google.com?daddr=46.0500176, 14.4668417&saddr=";
     povezava = povezava + mojaLokacijaA + "," + mojaLokacijaB;
     //console.log(povezava);
     //<a href="povezava" title="Navodila za pot" target="_blank">gumb</a>
-    $("#povezavaOdpri").attr("href", povezava);
+    $("#povezavaOdpri").attr("src", povezava);
 }
 
 function geolocationError(positionError) {
@@ -72,3 +75,7 @@ function geolocateUser() {
 }
 
 window.onload = geolocateUser;
+
+$(document).ready(function () {
+    $("#povezavaOdpri").attr("src", povezava);
+});

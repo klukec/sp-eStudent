@@ -21,6 +21,21 @@
     font-size: 28px;
 }
 
+/* Trenutna lokacija */
+#map {
+    width: 100%;
+    height: 265px;
+    margin-bottom: 20px;
+}
+.obvestilo {
+    width: 180%;
+}
+.navodilaZaPot {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
 /* Header in fotter. */
 .navbar {
     height: 80px;
