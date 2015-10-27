@@ -10,7 +10,7 @@ $(document).ready(function () {
         var mapOptions = {
             center: myLatlng,
             zoom: 16,
-            scrollwheel: false,
+            scrollwheel: true,
             draggable: true,
             panControl: true,
             zoomControl: true,

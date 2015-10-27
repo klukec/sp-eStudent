@@ -46,7 +46,7 @@ function geolocationSuccess(position) {
     var mojaLokacijaA = position.coords.latitude;
     var mojaLokacijaB = position.coords.longitude;
 
-    var povezava = "https://maps.google.com?daddr=46.0500176,14.4668417&saddr=";
+    var povezava = "https://maps.google.com?daddr=46.0500176, 14.4668417&saddr=";
     povezava = povezava + mojaLokacijaA + "," + mojaLokacijaB;
     //console.log(povezava);
     //<a href="povezava" title="Navodila za pot" target="_blank">gumb</a>
