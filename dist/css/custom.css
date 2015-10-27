@@ -36,6 +36,10 @@
     border: none;
 }
 
+.minVisina {
+    min-height: 316px;
+}
+
 /* Header in fotter. */
 .navbar {
     height: 80px;

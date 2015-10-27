@@ -46,8 +46,13 @@
 
 <body>
 
-<div id="wrapper">
+<script>
+    $(document).ready(function () {
+        $.cookie("novObiskovalec", 1, { expires : 365 });
+    });
+</script>
 
+<div id="wrapper">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
