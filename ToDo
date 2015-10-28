@@ -1,18 +1,17 @@
-- GEO lokacija, navodila za pot od trenutne lokacije do fakultete
-
-
-
 Upošteval:
-- veè slik v eni - slices - makro.si ?
+
+- dedovanje razredov
+- uporaba veè razredov hkrati
 - prelivanje ozadja v headerju - CSS 3
 - zaobljeni robovi - border radious
 - transition - logotip
-- input type: tel, email, password, date, placeholder - html 5
-- range za številko
-- custom poblikovan unordered list
+
+- javacript za boljšo uporabniško izkušnjo: povezava se naloži naknadno (za navodila), eno oblikovanje zgolj za firefox...
+- range za številko sem še dodatno oblikoval in javascriptal
 - uporabljanje required
+- uporaba piskotkov
+- JavaScript sortiranje tabele
+
 - uporaba geo lokacije
 - uporabljam video html 5
 - no-javascript naèin deluje dovolj dobro
-- javacript za boljšo uporabniško izkušnjo: povezava se naloži naknadno (za navodila), eno oblikovanje zgolj za firefox...
-- uporaba piskotkov
