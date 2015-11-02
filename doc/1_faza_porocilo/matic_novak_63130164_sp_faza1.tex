@@ -1,0 +1,117 @@
+% To je predloga za poročila o domačih nalogah pri predmetih, katerih
+% nosilec je Blaž Zupan. Seveda lahko tudi dodaš kakšen nov, zanimiv
+% in uporaben element, ki ga v tej predlogi (še) ni. Več o LaTeX-u izveš na
+% spletu, na primer na http://tobi.oetiker.ch/lshort/lshort.pdf.
+%
+% To predlogo lahko spremeniš v PDF dokument s pomočjo programa
+% pdflatex, ki je del standardne instalacije LaTeX programov.
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{a4wide}
+\usepackage{fullpage}
+\usepackage[utf8x]{inputenc}
+\usepackage[slovene]{babel}
+\selectlanguage{slovene}
+\usepackage[toc,page]{appendix}
+\usepackage[pdftex]{graphicx} % za slike
+\usepackage{setspace}
+\usepackage{color}
+\definecolor{light-gray}{gray}{0.95}
+\usepackage{listings} % za vključevanje kode
+\usepackage{hyperref}
+\renewcommand{\baselinestretch}{1.2} % za boljšo berljivost večji razmak
+\renewcommand{\appendixpagename}{Priloge}
+
+\lstset{ % nastavitve za izpis kode, sem lahko tudi kaj dodaš/spremeniš
+language=Python,
+basicstyle=\footnotesize,
+basicstyle=\ttfamily\footnotesize\setstretch{1},
+backgroundcolor=\color{light-gray},
+}
+
+\title{Statična stran HTML/CSS in dinamičnost z JavaScript \\ Spletno programiranje}
+\author{Matic Novak (63130164)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Moji podatki}
+
+Matic Novak, 63130164, 2015/2016, spletno programiranje
+
+\section{Ime in namen spletne strani}
+
+Odločil sem se za izdelavo spletne aplikacije e-Študent, ker me tema privlači. Namen študijskega informacijskega sistema je informatizirati študijski proces. Odpravlja nekoč uveljavljene indekse, v katerih so študentje zbirali ocene. Vpis ocene je predstavljalo dodaten proces, saj se je kandidat moral dogovoriti s profesorjem in se fizično oglasiti pri njem z indeksom. Aplikacija zato omogoča vnos in celosten pregled nad študenti in njihovimi ocenami, nad profesorji, predmeti, ki se izvajajo. Tako študentom kot tudi profesorjem in študentskemu referatu olajša in pohitri poslovanje. V aplikaciji si bom močno prizadeval za dobro uborabniško izkušnjo, sicer bi ga bilo težje uvesti med uporabnike. Uporabljati ga bo moč na klasičnih računalnikih, kot tudi na telefonih in tablicah, kar je dan danes že nujna funkcionalnost spletne aplikacije.
+
+\section{Povezava na projekt v oblaku}
+\href{http://klukec.github.io/sp-eStudent}{klik: http://klukec.github.io/sp-eStudent}
+
+\section{Ciljna publika in naprave}
+
+Ciljna publika so študentje, profesorji in študentski referat. Slednji bodo aplikacijo večinoma uporabljali na klasičnih oz. prenosnih računalnikih, študentje pa najverjetneje na telefonih in tablicah. Aplikacija ni namenjena zabavi in sprostitvi, temveč resnemu delu in podpori poslovnemu procesu. Iz istega razloga bo vsebovala zgolj nekaj barv - prevladovanje rdeče in črne v več odtenkih. Povdared bo na uporabnosti.
+
+\section{Zemljevid in struktura spletišča}
+
+Uporabil bom hierarhično strukturo spletnišča. Z nekaj krovnih strani bo pot vodila še na podstrani, ki bodo pokrile celotno problemsko domeno. S tovrstno strukturo bom dosegel preglednost aplikacije in s tem dodal na uporabnosti.\newline
+Meni bo vertikalno pozicioniran ob levem robu strani. Spustni meni se bo prikazal ob kliku na krovno oznako, saj prehod z miškinim kazalcem na napravah, občutljivih na dotik, ne pride v poštev. V primeru uporabe aplikacije na zelo majhnem zaslonu, bo meni na voljo šele ob kliku na ikono, da ne zaseda preveč prostora.
+
+\section{HTML 5}
+
+\begin{itemize}
+\item V aplikaciji sem seveda uprabil osnovne elemente, kot so odstavki (\texttt{<p>}), headingi (\texttt{<h1>}), odseki za novo vrstico (\texttt{<br />}), povezave z dodatnim oblikovanjem (\texttt{a class=""})...
+\item Vstavil sem sezname, ki za alineje uporabljajo lastne slike (\texttt{<ul class="puscica" >}).
+\item Za prikaz podatkov sem večkrat uporabil tabele, ki imajo posebej oblikovano glavo.
+\item Brez elementov \texttt{<div>} in \texttt{<span>} ne gre.
+\end{itemize}
+
+Potrudil sem se z izbiro HTML 5 elementov:
+\begin{itemize}
+\item Obrazce sem ovil v značko \texttt{<form>}. Nekatera vnosna polja so opisana v znački \texttt{<label>}, druga pa opis vsebujejo kar v "placeholderju".
+\item Obrazci vsebujejo zadnje elemente, kot so \texttt{input type="email", "password", "date", "range", "tel"}.
+\item Vključil sem multimedijski element video, v katerem se fakulteta predstavi.
+\end{itemize}
+
+\section{CSS}
+
+\begin{itemize}
+\item Slike v nogi strani sem združil v eno datoteko in jih razrezal v CSS-ju, saj s tem pridobim na hitrosti nalaganja strani (uporaba sprites).
+\item Uporabljal sem več razredov hkrati in dedovanje razredov.
+\item V headerju sem uporabil gradeintno polnilo - prelivanje ozadja.
+\item Okvirji imajo zaobljene robove (border radious) in sence (box-shadow).
+\item Nad logotipom sem nastavil transition.
+\end{itemize}
+
+\section{Javascript}
+
+\begin{itemize}
+\item Tabelo lahko uredimo po abecednem vrstnem redu elementov glede na poljubni stolpec (seznam uporabnikov).
+\item Na nadzorni plošči se iz podatkov izriše interaktiven graf.
+\item Vključil sem uporabo piškotkov.
+\item Povezava za prikaz navodil za pot do fakultete se naloži šele, ko uporabnik dovoli uporabo geo lokacije in je le-ta zaznana.
+\item Dodana interaktivnost nad poljem \texttt{"range"} za boljšo uporabniško izkušnjo.
+\item Validacija obrazcev (required polja).
+\end{itemize}
+
+\section{Dodatne zahteve}
+
+\begin{itemize}
+\item Uporabljam zajem geo lokacije na strani odjemalca, s katero ugotovim, kako daleč se uporabnik nahaja od fakultete. Izpišem mu tudi navodila za pot.
+\item Uporabljam tudi zajem zvoka, kjer lahko uporabnik posname beležko in si jo posreduje na e-mail.
+\item Aplikacija deluje na fizično različno velikih napravh (telefoni, tablice, namizni računalniki). V ta namen sem uporabil Bootstrap. Testirano dobro deluje v štirih brskalnikih: Chrome, Mozilla Firefox, Internet Explorer, Edge. Za Firefox sem moral dodati nekaj specifičnih elementov v css datoteko.
+\begin{lstlisting}
+@-moz-document url-prefix() {
+    .btn-mozilla {
+        margin-top: 81px;
+    }
+}
+\end{lstlisting}
+\item Aplikacijo sem testiral tudi v okolju no-javacript in se obnaša dovolj dobro.
+\end{itemize}
+
+\section{Dva posebna elementa strani}
+Prvi element je graf na nadzorni plošči, ki se avtomatsko izriše iz tabele podatkov. Omogoča visoko interaktivnost, ko se z miško premikamo po njem. Podatki so tako predstavljeni pregledno ter na uporabniku prijazen način.\newline
+Drugi element je uporaba geo lokacije. To zazna brskalnik in jo izpiše v za to pripravljen \texttt{"<span>"} okvir. Na podlagi le-te sestavi tudi url naslov, ki omogoča prikaz navodil za pot do fakultete.
+
+\end{document}

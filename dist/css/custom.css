@@ -115,6 +115,11 @@
     display: inline;
 }
 
+.film {
+    width: 100% !important;
+    height: auto;
+}
+
 /* Footer Makro.si */
 #makro-izvedba {
     padding: 5px 10px 10px 10px;
