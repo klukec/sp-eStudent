@@ -58,6 +58,7 @@
         <!-- /.navbar-header -->
 
         <ul class="nav navbar-top-links navbar-right">
+            <li><a id="odpriChat"><i class="fa fa-comments fa-fw"></i></a></li>
             <li><a href="userProfile.html"><i class="fa fa-user fa-fw"></i></a></li>
             <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i></a></li>
             <!-- /.dropdown -->
@@ -215,6 +216,8 @@
     </div>
     <!-- /#page-wrapper -->
 
+    <div id="foo"></div> <!-- /.chat right corner -->
+
 </div>
 <div class="panel-footer noga">
     <a href="http://www.makro.si" title="Izvedba : Makro.si" target="_blank">
@@ -244,17 +247,12 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="../dist/js/sb-admin-2.js"></script>
+<script src="../dist/js/custom.js"></script>
 
 <!-- Page-Level Demo Scripts - Tables - Use for reference -->
 <script>
     $(document).ready(function() {
         $('#seznamStudentov').DataTable({
-            responsive: true
-        });
-        $('#seznamProfesorjev').DataTable({
-            responsive: true
-        });
-        $('#seznamAdminov').DataTable({
             responsive: true
         });
     });

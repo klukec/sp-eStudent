@@ -150,6 +150,15 @@
     background-position:0px -30px;
 }
 
+#foo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    display: none;
+}
+
+
 /* Breadcrumbs */
 /** The Magic **/
 .btn-breadcrumb .btn:not(:last-child):after {

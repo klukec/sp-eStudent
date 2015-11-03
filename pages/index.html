@@ -65,6 +65,7 @@
         <!-- /.navbar-header -->
 
         <ul class="nav navbar-top-links navbar-right">
+            <li><a id="odpriChat"><i class="fa fa-comments fa-fw"></i></a></li>
             <li><a href="userProfile.html"><i class="fa fa-user fa-fw"></i></a></li>
             <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i></a></li>
             <!-- /.dropdown -->
@@ -146,7 +147,9 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Nadzorna plošča <div id="piskotek"></div></h1>
+                <h1 class="page-header">Nadzorna plošča
+                    <div id="piskotek"></div>
+                </h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -260,7 +263,7 @@
                 </div>
                 <!-- /.panel -->
 
-                <div class="chat-panel panel panel-default">
+                <div id="pogovor" class="chat-panel panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-comments fa-fw"></i>
                         Pogovor s profesorjem ali administratorjem
@@ -292,8 +295,10 @@
                         <ul class="chat">
                             <li class="left clearfix">
                                     <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+                                             class="img-circle">
                                     </span>
+
                                 <div class="chat-body clearfix">
                                     <div class="header">
                                         <strong class="primary-font">Matic Novak</strong>
@@ -302,52 +307,65 @@
                                         </small>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
                             <li class="right clearfix">
                                     <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+                                             class="img-circle">
                                     </span>
+
                                 <div class="chat-body clearfix">
                                     <div class="header">
                                         <small class=" text-muted">
-                                            <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
+                                        </small>
                                         <strong class="pull-right primary-font">Aleš Smrdel</strong>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
                             <li class="left clearfix">
                                     <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+                                             class="img-circle">
                                     </span>
+
                                 <div class="chat-body clearfix">
                                     <div class="header">
                                         <strong class="primary-font">Matic Novak</strong>
                                         <small class="pull-right text-muted">
-                                            <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                            <i class="fa fa-clock-o fa-fw"></i> 14 mins ago
+                                        </small>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
                             <li class="right clearfix">
                                     <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+                                             class="img-circle">
                                     </span>
+
                                 <div class="chat-body clearfix">
                                     <div class="header">
                                         <small class=" text-muted">
-                                            <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
+                                        </small>
                                         <strong class="pull-right primary-font">Aleš Smrdel</strong>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
@@ -356,7 +374,8 @@
                     <!-- /.panel-body -->
                     <div class="panel-footer">
                         <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Vnesi svoje sporočilo...">
+                            <input id="btn-input" type="text" class="form-control input-sm"
+                                   placeholder="Vnesi svoje sporočilo...">
                                 <span class="input-group-btn">
                                     <button class="btn btn-warning btn-sm" id="btn-chat">
                                         Pošlji
@@ -447,7 +466,9 @@
         </div>
         <!-- /#page-wrapper -->
     </div>
+
 </div>
+
 <div class="panel-footer noga">
     <a href="http://www.makro.si" title="Izvedba : Makro.si" target="_blank">
         <div id="makro-izvedba">
@@ -474,6 +495,7 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="../dist/js/sb-admin-2.js"></script>
+<script src="../dist/js/custom.js"></script>
 
 </body>
 
