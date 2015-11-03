@@ -101,7 +101,10 @@
                                 <a href="zgodovinaSolanja.html">Zgodovina šolanja</a>
                             </li>
                             <li>
-                                <a href="usersList.html">Seznam uporabnikov</a>
+                                <a href="usersList.html">Seznam študentov</a>
+                            </li>
+                            <li>
+                                <a href="employedList.html">Seznam zaposlenih</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -147,7 +150,7 @@
                         <form role="form">
                             <div class="form-group">
                                 <label>Predmet</label>
-                                <select class="form-control" id="predmet" required multiple>
+                                <select class="form-control" id="predmet" required>
                                     <option>Diskretne strukture</option>
                                     <option>Osnove matematične analize</option>
                                     <option>Programiranje 1</option>
@@ -156,7 +159,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Šolsko leto</label>
-                                <select class="form-control" id="solLeto" required multiple>
+                                <select class="form-control" id="solLeto" required>
                                     <option>2010/2011</option>
                                     <option>2011/2012</option>
                                     <option>2012/2013</option>
@@ -166,16 +169,12 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Izpitni rok</label>
-                                <select class="form-control" id="izpitniRok" required multiple>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
                                 <label>Datum</label>
                                 <input type="date" class="form-control" name="datum" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Izpitni rok</label>
+                                <input class="form-control" id="izpitniRok" required value="Razpisujete 2. izpitni rok za izbrani predmet." disabled>
                             </div>
                             <div class="form-group">
                                 <label>Prostor</label>
